@@ -1,138 +1,130 @@
-*,
-*::before,
-*::after{
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
     box-sizing: border-box;
 }
 
-.navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    background-color: rgb(7, 104, 230);
-}
-
-*, ::before, ::after {
-    box-sizing: inherit;
-}
-
-.navigation a {
-    text-decoration: none;
-    font-weight: bolder;
-    padding: 1em;
-    margin-right: 30px;
-    color: white;
-}
-
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
 .hero {
-    width: auto;
-    background-image: url(/images/mountains.jpg);
+    height: 100vh;
+    width: 100%;
+    background-color: #191919;
     background-size: cover;
-    text-align: center;
-    height: 600px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding-top: 5px;
+    background-position: center;
 }
 
-.hero h2 {
-    font-size: 4rem;
-    text-align: center;
-    position: relative;
-    padding-top: 0rem;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
 }
 
-.hero h4 {
-    font-size: 1.5rem;
-    text-align: center;
-    position: relative;
-    padding-top: 0rem;
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 
-.hero-text {
-    text-align: center;
-    position: relative;
-    font-weight: 600;
-    font-style: var(--fw-bold);
-    padding-top: 5rem;
-    color: rgb(4, 37, 131);
+span {
+    color: #F70908;
 }
 
-.social-icon {
-    position: relative;
-    top: 5%;
-    -webkit-transform: translateY(-70%);
-    -ms-transform: translateY(-70%);
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #08F6F7;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
     transform: translateY(-50%);
 }
 
-.social-icon a {
-    padding: 0px;
-    width: 50px;
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #08F6F7;
+    letter-spacing: 20px;
     font-size: 20px;
-    text-decoration: none;
-    color: rgb(9, 9, 187);
 }
 
-.social-icon:hover {
-    opacity: 0.7;
+.about {
+    width: 100%
+    padding: 100px 0px;
+    background-color: #191919;
 }
 
-.fa-linkedin-square {
-    padding-right: 1rem;
+.about img {
+    height: auto;
+    width: 430px;
 }
 
-.fa-github {
-    padding-left: 1rem;
+.about-text {
+    width: 550px;
 }
 
-.footer {
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
     display: flex;
-    background-color: rgb(172, 174, 177);
-    color: #ffff;
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: bold;
-    font-size: .75rem;
-    height: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    margin-right: 16px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
-.links {
-    display: flex;
-    font-family: "Trebuchet MS", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
 }
 
-.links a {
-    text-decoration: none;
-    font-weight: bolder;
-    padding: 1em;
-    margin-right: 30px;
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
 }
 
-.links a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: underline;
+.about-text p {
+    color: #08F6F7;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.experience {
+    width: 100%
+    padding: 0px;
+    background-color: #191919;
 }
